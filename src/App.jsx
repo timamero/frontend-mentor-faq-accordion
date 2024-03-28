@@ -1,7 +1,16 @@
+import Layout from './components/Layout';
+
 function App() {
   return (
-    <div><h1>FAQ Accordion</h1></div>
-  )
+    <div>
+      <Layout>
+        <div>
+          <h1>test content</h1>
+          <p> test content </p>
+        </div>
+      </Layout>
+    </div>
+  );
 }
 
-export default App
+export default App;

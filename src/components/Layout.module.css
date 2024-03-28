@@ -1,0 +1,15 @@
+.layout {
+  background-color: var(--light-pink);
+  height: 100vh;
+  width: 100vw;
+}
+
+.bg {
+  background-image: url('../assets/images/background-pattern-mobile.svg');
+  background-color: var(--light-pink);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: top;
+  width: 100vw;
+  height: 100%;
+}
