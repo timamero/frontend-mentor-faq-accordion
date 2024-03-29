@@ -5,5 +5,21 @@
 
   --font-size: 16px;
   --sans-font: 'Work Sans', sans-serif;
+  --normal-weight: 400;
+  --bold-weight: 600;
+  --bolder-weight: 700;
+
+  --small-padding: 24px;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
