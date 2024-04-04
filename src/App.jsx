@@ -7,8 +7,7 @@ function App() {
     <div>
       <Layout>
         <Container>
-          <Card>
-            <h1>FAQs</h1>
+          <Card title="FAQs">
             <p>What is Frontend Mentor</p>
           </Card>
         </Container>

@@ -2,7 +2,21 @@
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  width: 100%;
+  /* width: 100%; */
   padding: var(--small-padding);
-  border-radius: 16px;
+  margin: var(--small-padding);
+  border-radius: 8px;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.cardHeader h1 {
+  margin: 0;
+  color: var(--dark-purple);
 }
