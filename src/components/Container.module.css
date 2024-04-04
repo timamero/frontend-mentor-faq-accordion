@@ -8,6 +8,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: var(--small-padding);
+  align-items:stretch;
+  /* padding: var(--small-padding); */
 }
