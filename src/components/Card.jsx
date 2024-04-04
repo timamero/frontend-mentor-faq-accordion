@@ -1,7 +1,9 @@
 import styles from './Card.module.css';
 import iconStar from '../assets/images/icon-star.svg';
+import { faqsData } from '../data';
 
-export default function Card({ title, children }) {
+export default function Card({ title }) {
+  console.log('faqsdata', faqsData);
   return (
     <div className={styles.card}>
       <div className={styles.cardHeader}>
@@ -9,7 +11,7 @@ export default function Card({ title, children }) {
         <h1>{title}</h1>
       </div>
 
-      {children}
+      <div className={faqsData}></div>
     </div>
   );
 }
