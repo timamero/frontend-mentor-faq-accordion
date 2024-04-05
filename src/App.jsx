@@ -1,4 +1,4 @@
-import Accordion from './components/Accordion';
+import { Accordion, AccordionItem } from './components/Accordion';
 import Card from './components/Card';
 import Container from './components/Container';
 import Layout from './layout/Layout';
@@ -10,7 +10,9 @@ function App() {
     <Layout>
       <Container>
         <Card title="FAQs">
-          <Accordion />
+          <Accordion>
+            <AccordionItem>Item placeholder</AccordionItem>
+          </Accordion>
         </Card>
       </Container>
     </Layout>
