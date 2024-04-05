@@ -1,9 +1,7 @@
 import styles from './Card.module.css';
 import iconStar from '../../assets/images/icon-star.svg';
-import { faqsData } from '../../data';
 
-export default function Card({ title }) {
-  console.log('faqsdata', faqsData);
+export default function Card({ title, children }) {
   return (
     <div className={styles.card}>
       <div className={styles.cardHeader}>
@@ -11,7 +9,7 @@ export default function Card({ title }) {
         <h1>{title}</h1>
       </div>
 
-      <div className={styles.cardContent}>accordion placeholder</div>
+      <div className={styles.cardContent}>{children}</div>
     </div>
   );
 }

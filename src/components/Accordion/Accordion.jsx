@@ -1,5 +1,5 @@
 import styles from './Accordion.module.css';
 
-export default function Accordion() {
-  return <div className={styles.accordion}>Accordion</div>;
+export default function Accordion({ children }) {
+  return <div className={styles.accordion}>{children}</div>;
 }
