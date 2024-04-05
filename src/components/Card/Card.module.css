@@ -14,6 +14,7 @@
   justify-content: flex-start;
   align-items: center;
   column-gap: 24px;
+  margin-bottom: 24px;
 }
 
 .cardHeader h1 {

@@ -11,7 +11,7 @@ export default function Card({ title }) {
         <h1>{title}</h1>
       </div>
 
-      <div className={faqsData}></div>
+      <div className={styles.cardContent}>accordion placeholder</div>
     </div>
   );
 }
