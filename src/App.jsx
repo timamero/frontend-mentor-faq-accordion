@@ -4,13 +4,11 @@ import Layout from './layout/Layout';
 
 function App() {
   return (
-    <div>
-      <Layout>
-        <Container>
-          <Card title="FAQs" />
-        </Container>
-      </Layout>
-    </div>
+    <Layout>
+      <Container>
+        <Card title="FAQs" />
+      </Container>
+    </Layout>
   );
 }
 
