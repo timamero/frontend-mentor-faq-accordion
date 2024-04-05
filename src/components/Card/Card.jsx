@@ -1,6 +1,6 @@
 import styles from './Card.module.css';
-import iconStar from '../assets/images/icon-star.svg';
-import { faqsData } from '../data';
+import iconStar from '../../assets/images/icon-star.svg';
+import { faqsData } from '../../data';
 
 export default function Card({ title }) {
   console.log('faqsdata', faqsData);
