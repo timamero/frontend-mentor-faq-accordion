@@ -1,6 +1,12 @@
 .accordion {
   color: var(--dark-purple);
 }
+
+/* Style accordian group */
+.accordion > div {
+  background-color: transparent;
+}
+
 .accordionItem {
   color: var(--dark-purple);
 }
