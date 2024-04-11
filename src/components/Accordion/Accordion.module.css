@@ -9,7 +9,11 @@
 
 .accordionItem {
   color: var(--dark-purple);
+  font-weight: var(--bold-weight);
+  margin-bottom: 24px;
 }
 .accordionDetails {
-  color: var(--dark-purple);
+  color: var(--greyish-purple);
+  font-size: 14px;
+  line-height: 20px;
 }
