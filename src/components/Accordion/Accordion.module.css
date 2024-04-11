@@ -18,6 +18,12 @@
   column-gap: 16px;
 }
 
+.accordionItem > button {
+  border: 0;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 .accordionDetails {
   color: var(--greyish-purple);
   font-size: 14px;

@@ -5,7 +5,9 @@ export default function AccordionItem({ children }) {
   return (
     <div className={styles.accordionItem}>
       <p>{children}</p>
-      <img src={iconMinus} height="32px" width="32px" />
+      <button>
+        <img src={iconMinus} height="32px" width="32px" />
+      </button>
     </div>
   );
 }
