@@ -11,7 +11,13 @@
   color: var(--dark-purple);
   font-weight: var(--bold-weight);
   margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
 }
+
 .accordionDetails {
   color: var(--greyish-purple);
   font-size: 14px;
