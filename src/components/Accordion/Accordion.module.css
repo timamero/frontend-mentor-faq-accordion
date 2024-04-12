@@ -5,6 +5,7 @@
 /* Style accordian group */
 .accordion > div {
   background-color: transparent;
+  overflow: hidden;
 }
 
 .accordionItem {
@@ -22,6 +23,10 @@
   border: 0;
   text-decoration: none;
   background-color: transparent;
+}
+
+.accordionDetails.inActive{
+  height: 0;
 }
 
 .accordionDetails {
