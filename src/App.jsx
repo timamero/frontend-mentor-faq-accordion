@@ -13,7 +13,11 @@ function App() {
   const [activeID, setActiveID] = useState(1);
   const accordionGroup = faqsData.map((obj) => (
     <div key={obj.id}>
-      <AccordionItem isActive={activeID === obj.id}>
+      <AccordionItem
+        isActive={activeID === obj.id}
+        onClick={setActiveID}
+        id={obj.id}
+      >
         {obj.question}
       </AccordionItem>
       <AccordionDetails isActive={activeID === obj.id}>
@@ -21,7 +25,7 @@ function App() {
       </AccordionDetails>
     </div>
   ));
-  console.log('data', faqsData);
+  console.log('activeID', activeID);
   return (
     <Layout>
       <Container>
