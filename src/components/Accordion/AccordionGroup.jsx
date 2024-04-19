@@ -1,12 +1,20 @@
-import { useState } from 'react';
 import AccordionItem from './AccordionItem';
 import AccordionDetails from './AccordionDetails';
 
-export default function AccordionGroup({ id, item, details }) {
-  const [activeID, setActiveID] = useState(1);
+export default function AccordionGroup({
+  id,
+  item,
+  details,
+  activeID,
+  handleSetActiveClick,
+}) {
   return (
     <div>
-      <AccordionItem isActive={activeID === id} onClick={setActiveID} id={id}>
+      <AccordionItem
+        isActive={activeID === id}
+        onClick={handleSetActiveClick}
+        id={id}
+      >
         {item}
       </AccordionItem>
       <AccordionDetails isActive={activeID === id}>{details}</AccordionDetails>
