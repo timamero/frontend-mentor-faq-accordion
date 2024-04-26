@@ -23,7 +23,8 @@
 
 @media (min-width: 600px) {
   .card {
-    max-width: 590px;
+    max-width: 620px;
+    padding: 48px;
   }
 
   .cardHeader h1 {
