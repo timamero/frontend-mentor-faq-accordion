@@ -25,4 +25,8 @@
   .card {
     max-width: 520px;
   }
+
+  .cardHeader h1 {
+    font-size: 4rem;
+  }
 }
