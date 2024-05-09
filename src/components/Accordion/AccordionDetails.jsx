@@ -7,7 +7,7 @@ export default function AccordionDetails({ isActive, children }) {
         isActive ? '' : styles.inActive
       }`}
     >
-      {children}
+      <p>{children}</p>
     </div>
   );
 }
