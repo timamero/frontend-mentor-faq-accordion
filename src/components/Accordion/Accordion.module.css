@@ -26,15 +26,17 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 16px;
+  width: 100%;
 }
 
-.accordionItem > button {
+/* Remove default button styles */
+.accordionItem {
   border: 0;
   text-decoration: none;
   background-color: transparent;
 }
 
-.accordionItem:has(+ .accordionDetails.inActive) > button {
+.accordionItem:has(+ .accordionDetails.inActive) {
   cursor: pointer;
 }
 
@@ -46,6 +48,14 @@
   padding-top: 16px;
   padding-bottom: 24px;
   animation: reveal 0.4s ease-in 1;
+}
+
+.accordionItem p {
+  text-align: left;
+}
+
+.accordionItem:hover p {
+  color: var(--purple);
 }
 
 .accordionDetails.inActive {

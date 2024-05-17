@@ -4,11 +4,11 @@ import iconPlus from '../../assets/images/icon-plus.svg';
 
 export default function AccordionItem({ isActive, onClick, id, children }) {
   return (
-    <div className={styles.accordionItem}>
+    <button onClick={() => onClick(id)} className={styles.accordionItem}>
       <p>{children}</p>
-      <button onClick={() => onClick(id)}>
-        <img src={isActive ? iconMinus : iconPlus} height="32px" width="32px" />
-      </button>
-    </div>
+      {/* <button onClick={() => onClick(id)}> */}
+      <img src={isActive ? iconMinus : iconPlus} height="32px" width="32px" />
+      {/* </button> */}
+    </button>
   );
 }
