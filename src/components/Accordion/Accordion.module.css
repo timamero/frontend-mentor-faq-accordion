@@ -47,7 +47,6 @@
   line-height: 22px;
   padding-top: 16px;
   padding-bottom: 24px;
-  animation: reveal 0.4s ease-in 1;
 }
 
 .accordionItem p {
@@ -60,16 +59,6 @@
 
 .accordionDetails.inActive {
   display: none;
-}
-
-@keyframes reveal {
-  0% {
-    transform: scaleY(0);
-  }
-
-  100% {
-    transform: scaleY(1);
-  }
 }
 
 /* Select all accordianItems in inactive group */
