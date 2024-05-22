@@ -53,8 +53,10 @@
   text-align: left;
 }
 
-.accordionItem:hover p {
-  color: var(--purple);
+@media (hover: hover) {
+  .accordionItem:hover p {
+    color: var(--purple);
+  }
 }
 
 .accordionDetails.inActive {

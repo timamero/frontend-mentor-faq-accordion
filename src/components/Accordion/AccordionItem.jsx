@@ -6,9 +6,7 @@ export default function AccordionItem({ isActive, onClick, id, children }) {
   return (
     <button onClick={() => onClick(id)} className={styles.accordionItem}>
       <p>{children}</p>
-      {/* <button onClick={() => onClick(id)}> */}
       <img src={isActive ? iconMinus : iconPlus} height="32px" width="32px" />
-      {/* </button> */}
     </button>
   );
 }
