@@ -3,7 +3,7 @@ import Card from './components/Card';
 import Container from './components/Container';
 import Layout from './layout/Layout';
 import { faqsData } from './data';
-
+// Clean up code
 function App() {
   return (
     <Layout>
