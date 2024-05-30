@@ -14,10 +14,13 @@ export default function AccordionGroup({
         isActive={activeID === id}
         onClick={handleSetActiveClick}
         id={id}
+        role="region"
       >
         {item}
       </AccordionItem>
-      <AccordionDetails isActive={activeID === id}>{details}</AccordionDetails>
+      <AccordionDetails isActive={activeID === id} id={id}>
+        {details}
+      </AccordionDetails>
     </div>
   );
 }
