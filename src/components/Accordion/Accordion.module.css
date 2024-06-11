@@ -34,9 +34,6 @@
   border: 0;
   text-decoration: none;
   background-color: transparent;
-}
-
-.accordionItem:has(+ .accordionDetails.inActive) {
   cursor: pointer;
 }
 
