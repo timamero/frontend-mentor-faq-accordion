@@ -5,6 +5,7 @@
   padding: var(--small-padding);
   margin: var(--small-padding);
   border-radius: 8px;
+  box-shadow: 8px 8px 36px -16px var(--dark-purple);
 }
 
 .cardHeader {
