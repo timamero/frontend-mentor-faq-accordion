@@ -9,7 +9,14 @@ function App() {
     <Layout>
       <Container>
         <Card title="FAQs">
-          <Accordion data={faqsData} />
+          <div>
+            {faqsData.map((faq) => (
+              <div key={faq.id}>
+                <h2>{faq.question}</h2>
+                <p>{faq.answer}</p>
+              </div>
+            ))}
+          </div>
         </Card>
       </Container>
     </Layout>
