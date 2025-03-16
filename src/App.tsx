@@ -1,7 +1,7 @@
 import { Accordion, AccordionGroup } from './components/Accordion';
 import Card from './components/Card';
 import Container from './components/Container';
-import Layout from './layout/Layout';
+import Layout from './layout/Layout.tsx';
 import { faqsData } from './data';
 
 function App() {
