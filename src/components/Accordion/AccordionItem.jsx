@@ -3,11 +3,9 @@ import iconMinus from '../../assets/images/icon-minus.svg';
 import iconPlus from '../../assets/images/icon-plus.svg';
 
 export default function AccordionItem({ isActive, id, children }) {
-  // console.log('item id', id);
   return (
     <h2>
       <button
-        // onClick={() => onClick()}
         className={styles.accordionItem}
         aria-expanded={isActive}
         aria-controls={`detail-${id}`}
