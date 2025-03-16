@@ -6,13 +6,13 @@ export default function AccordionGroup({
   item,
   details,
   activeID,
-  handleSetActiveClick,
+  // handleSetActiveClick,
 }) {
   return (
     <div>
       <AccordionItem
         isActive={activeID === id}
-        onClick={handleSetActiveClick}
+        // onClick={handleSetActiveClick}
         id={id}
         role="region"
       >
