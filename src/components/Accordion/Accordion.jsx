@@ -1,11 +1,11 @@
 import styles from './Accordion.module.css';
 
 export default function Accordion({ children }) {
-  const handleClick = (event) => {
-    console.log('clicked', event.target);
+  const handleAccordionClick = (event) => {
+    console.log('clicked', event.target.dataset.accordion);
   };
   return (
-    <div className={styles.accordion} onClick={handleClick}>
+    <div className={styles.accordion} onClick={handleAccordionClick}>
       {children}
     </div>
   );
