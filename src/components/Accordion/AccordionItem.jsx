@@ -7,12 +7,12 @@ export default function AccordionItem({ isActive, id, children }) {
   return (
     <h2>
       <button
-        // onClick={() => onClick(id)}
+        // onClick={() => onClick()}
         className={styles.accordionItem}
         aria-expanded={isActive}
         aria-controls={`detail-${id}`}
         id={`accordion-${id}`}
-        data-accordion={`accordion-${id}`}
+        data-accordion={id}
       >
         <p>{children}</p>
         <img src={isActive ? iconMinus : iconPlus} height="32px" width="32px" />
