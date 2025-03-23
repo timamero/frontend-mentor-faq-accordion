@@ -1,7 +1,12 @@
 import styles from './Card.module.css';
 import iconStar from '../../assets/images/icon-star.svg';
 
-export default function Card({ title, children }) {
+type CardProps = {
+  title: string;
+  children: React.JSX.Element;
+}
+
+export default function Card({ title, children }: CardProps) {
   return (
     <div className={styles.card}>
       <div className={styles.cardHeader}>
