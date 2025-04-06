@@ -5,16 +5,17 @@ type AccordionProp = {
   children: React.JSX.Element;
 }
 
-export const AccordionContext = createContext<number | null>(null);
+export const AccordionContext = createContext<string | null>(null);
 
 export default function Accordion({ children }: AccordionProp) {
-  const [activeAccordion, setActiveAccordion] = useState(1);
-  // TODO: Update typeing for handleAccordionClick
+  const [activeAccordion, setActiveAccordion] = useState<string | undefined>("1");
   const handleAccordionClick = (event: React.ChangeEvent<HTMLInputElement>) => {
     const element: HTMLElement = event.target
-    setActiveAccordion(element.dataset.accordion);
+    const id: string | undefined = element.dataset.accordion
+    setActiveAccordion(id);
   };
   return (
+    // TODO: Fix typing for value and onClick
     <AccordionContext.Provider value={{ activeAccordion }}>
       <div className={styles.accordion} onClick={handleAccordionClick}>
         {children}
