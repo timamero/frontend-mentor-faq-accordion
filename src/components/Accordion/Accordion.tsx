@@ -5,8 +5,7 @@ type AccordionProp = {
   children: React.JSX.Element;
 }
 
-// TODO: Add typing to context
-export const AccordionContext = createContext(null);
+export const AccordionContext = createContext<number | null>(null);
 
 export default function Accordion({ children }: AccordionProp) {
   const [activeAccordion, setActiveAccordion] = useState(1);
