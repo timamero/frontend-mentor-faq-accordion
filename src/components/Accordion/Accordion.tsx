@@ -10,8 +10,9 @@ export const AccordionContext = createContext<number | null>(null);
 export default function Accordion({ children }: AccordionProp) {
   const [activeAccordion, setActiveAccordion] = useState(1);
   // TODO: Update typeing for handleAccordionClick
-  const handleAccordionClick = (event: React.SyntheticEvent<HTMLButtonElement>) => {
-    setActiveAccordion(event.target.dataset.accordion);
+  const handleAccordionClick = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const element: HTMLElement = event.target
+    setActiveAccordion(element.dataset.accordion);
   };
   return (
     <AccordionContext.Provider value={{ activeAccordion }}>
