@@ -8,15 +8,17 @@ type AccordionProp = {
 export const AccordionContext = createContext<string | null>(null);
 
 export default function Accordion({ children }: AccordionProp) {
-  const [activeAccordion, setActiveAccordion] = useState<string | undefined>("1");
+  const [activeAccordion, setActiveAccordion] = useState<string>("1");
   const handleAccordionClick = (event: React.ChangeEvent<HTMLInputElement>) => {
     const element: HTMLElement = event.target
-    const id: string | undefined = element.dataset.accordion
-    setActiveAccordion(id);
+    if (element.dataset.accordion) {
+      const id: string = element.dataset.accordion
+      setActiveAccordion(id);
+    }
   };
   return (
-    // TODO: Fix typing for value and onClick
-    <AccordionContext.Provider value={{ activeAccordion }}>
+    // TODO: Fix typing onClick
+    <AccordionContext.Provider value={activeAccordion}>
       <div className={styles.accordion} onClick={handleAccordionClick}>
         {children}
       </div>
