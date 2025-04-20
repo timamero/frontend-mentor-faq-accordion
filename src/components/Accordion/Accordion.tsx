@@ -18,7 +18,7 @@ export default function Accordion({ children }: AccordionProp) {
   };
   return (
     <AccordionContext.Provider value={activeAccordion}>
-      <div className={styles.accordion} onClick={handleAccordionClick}>
+      <div className={styles.accordion} onClick={handleAccordionClick} role="region">
         {children}
       </div>
     </AccordionContext.Provider>
