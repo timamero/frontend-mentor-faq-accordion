@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react';
 import styles from './Accordion.module.css';
 
 type AccordionProp = {
-  children: React.JSX.Element;
+  children: Array<React.JSX.Element>;
 }
 
 export const AccordionContext = createContext<string | null>(null);
