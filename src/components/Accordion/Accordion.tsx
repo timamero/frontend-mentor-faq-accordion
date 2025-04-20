@@ -10,7 +10,7 @@ export const AccordionContext = createContext<string | null>(null);
 export default function Accordion({ children }: AccordionProp) {
   const [activeAccordion, setActiveAccordion] = useState<string>("1");
   const handleAccordionClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    const element: HTMLElement = event.target
+    const element = event.target as HTMLElement
     if (element.dataset.accordion) {
       const id: string = element.dataset.accordion
       setActiveAccordion(id);
