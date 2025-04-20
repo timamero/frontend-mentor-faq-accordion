@@ -11,13 +11,12 @@ type AccordionGroupProp = {
 
 export default function AccordionGroup({ id, item, details }: AccordionGroupProp) {
   const activeID = useContext(AccordionContext);
-  // const activeID = useContext(AccordionContext).activeAccordion;
   return (
     <div>
-      <AccordionItem isActive={activeID == id} id={id}>
+      <AccordionItem isActive={activeID === id} id={id}>
         {item}
       </AccordionItem>
-      <AccordionDetails isActive={activeID == id} id={id}>
+      <AccordionDetails isActive={activeID === id} id={id}>
         {details}
       </AccordionDetails>
     </div>
