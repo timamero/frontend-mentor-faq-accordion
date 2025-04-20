@@ -14,7 +14,7 @@ export default function AccordionGroup({ id, item, details }: AccordionGroupProp
   // const activeID = useContext(AccordionContext).activeAccordion;
   return (
     <div>
-      <AccordionItem isActive={activeID == id} id={id} role="region">
+      <AccordionItem isActive={activeID == id} id={id}>
         {item}
       </AccordionItem>
       <AccordionDetails isActive={activeID == id} id={id}>
