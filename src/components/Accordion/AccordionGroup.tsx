@@ -3,7 +3,13 @@ import AccordionItem from './AccordionItem';
 import AccordionDetails from './AccordionDetails';
 import { AccordionContext } from './Accordion';
 
-export default function AccordionGroup({ id, item, details }) {
+type AccordionGroupProp = {
+  id: string;
+  item: string;
+  details: string;
+}
+
+export default function AccordionGroup({ id, item, details }: AccordionGroupProp) {
   const activeID = useContext(AccordionContext);
   // const activeID = useContext(AccordionContext).activeAccordion;
   return (

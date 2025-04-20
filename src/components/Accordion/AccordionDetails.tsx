@@ -3,7 +3,7 @@ import styles from './Accordion.module.css';
 type AccordionDetailsProp = {
   isActive: boolean;
   id: string;
-  children: React.JSX.Element;
+  children: string;
 }
 
 export default function AccordionDetails({ isActive, id, children }: AccordionDetailsProp) {

@@ -5,7 +5,7 @@ import iconPlus from '../../assets/images/icon-plus.svg';
 type AccordionItemProp = {
   isActive: boolean;
   id: string;
-  children: React.JSX.Element;
+  children: string;
 }
 
 export default function AccordionItem({ isActive, id, children }: AccordionItemProp) {
