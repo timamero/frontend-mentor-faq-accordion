@@ -2,7 +2,13 @@ import styles from './Accordion.module.css';
 import iconMinus from '../../assets/images/icon-minus.svg';
 import iconPlus from '../../assets/images/icon-plus.svg';
 
-export default function AccordionItem({ isActive, id, children }) {
+type AccordionItemProp = {
+  isActive: boolean;
+  id: string;
+  children: React.JSX.Element;
+}
+
+export default function AccordionItem({ isActive, id, children }: AccordionItemProp) {
   return (
     <h2>
       <button
