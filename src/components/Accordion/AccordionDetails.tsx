@@ -1,6 +1,12 @@
 import styles from './Accordion.module.css';
 
-export default function AccordionDetails({ isActive, id, children }) {
+type AccordionDetailsProp = {
+  isActive: boolean;
+  id: string;
+  children: React.JSX.Element;
+}
+
+export default function AccordionDetails({ isActive, id, children }: AccordionDetailsProp) {
   return (
     <div
       id={`detail-${id}`}
