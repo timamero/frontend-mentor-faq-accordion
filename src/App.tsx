@@ -13,7 +13,7 @@ function App() {
             {faqsData.map((faq) => (
               <AccordionGroup
                 key={faq.id}
-                id={faq.id}
+                id={String(faq.id)}
                 item={faq.question}
                 details={faq.answer}
               />
