@@ -1,24 +1,17 @@
-import { useContext } from 'react';
-import AccordionItem from './AccordionItem';
-import AccordionDetails from './AccordionDetails';
-import { AccordionContext } from './Accordion';
+// import { useContext } from 'react';
+// import AccordionItem from './AccordionItem';
+// import AccordionDetails from './AccordionDetails';
+// import { AccordionContext } from './Accordion';
 
 type AccordionGroupProp = {
-  id: string;
-  item: string;
-  details: string;
+  children: Array<React.JSX.Element>;
 }
 
-export default function AccordionGroup({ id, item, details }: AccordionGroupProp) {
-  const activeID = useContext(AccordionContext);
+export default function AccordionGroup({ children }: AccordionGroupProp) {
+  // const activeID = useContext(AccordionContext);
   return (
     <div>
-      <AccordionItem isActive={activeID === id} id={id}>
-        {item}
-      </AccordionItem>
-      <AccordionDetails isActive={activeID === id} id={id}>
-        {details}
-      </AccordionDetails>
+      {children}
     </div>
   );
 }

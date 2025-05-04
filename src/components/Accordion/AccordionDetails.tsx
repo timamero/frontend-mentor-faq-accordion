@@ -1,17 +1,21 @@
+import { useContext } from 'react';
+import { AccordionContext } from './Accordion';
+
 import styles from './Accordion.module.css';
 
 type AccordionDetailsProp = {
-  isActive: boolean;
+  // isActive: boolean;
   id: string;
   children: string;
 }
 
-export default function AccordionDetails({ isActive, id, children }: AccordionDetailsProp) {
+export default function AccordionDetails({ id, children }: AccordionDetailsProp) {
+  const activeID = useContext(AccordionContext);
   return (
     <div
       id={`detail-${id}`}
       className={`${styles.accordionDetails} ${
-        isActive ? '' : styles.inActive
+        id == activeID ? '' : styles.inActive
       }`}
       aria-labelledby={`accordion-${id}`}
     >
