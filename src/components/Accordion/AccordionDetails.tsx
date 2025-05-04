@@ -4,7 +4,6 @@ import { AccordionContext } from './Accordion';
 import styles from './Accordion.module.css';
 
 type AccordionDetailsProp = {
-  // isActive: boolean;
   id: string;
   children: string;
 }

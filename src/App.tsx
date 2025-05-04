@@ -4,7 +4,6 @@ import Container from './components/Container';
 import Layout from './layout/Layout.tsx';
 import { faqsData } from './data';
 
-// TODO: Restructure the components so that AccordionItem and AccordionDetails are imported and used in App
 function App() {
   return (
     <Layout>
@@ -27,12 +26,5 @@ function App() {
     </Layout>
   );
 }
-            // {faqsData.map((faq) => (
-            //   <AccordionGroup
-            //     key={faq.id}
-            //     id={String(faq.id)}
-            //     item={faq.question}
-            //     details={faq.answer}
-            //   />
-            // ))}
+
 export default App;

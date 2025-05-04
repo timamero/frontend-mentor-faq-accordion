@@ -6,7 +6,6 @@ import iconMinus from '../../assets/images/icon-minus.svg';
 import iconPlus from '../../assets/images/icon-plus.svg';
 
 type AccordionItemProp = {
-  // isActive: boolean;
   id: string;
   children: string;
 }
