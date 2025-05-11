@@ -46,14 +46,19 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Vite](https://vitejs.dev/) - Build tool
+- [TypeScript](https://www.typescriptlang.org/) - Typing
 
 ### What I learned
 
-I learned how to create a responsive and accessible accordion component.
+Through developing a responsive and accessible accordion component, I gained valuable insights into front-end architecture. My initial implementation revealed a fundamental design flaw—I had been passing text content as element attributes rather than structuring it properly within the component. This realization prompted a comprehensive refactoring process that elevated my thinking about component architecture and semantic HTML structure.
+
+A particularly rewarding challenge was implementing smooth height transitions between the accordion's active and inactive states. The solution I found was to set the transition on the max-height property. This project significantly deepened my understanding of both component design principles and animation techniques.
 
 ### Continued development
 
-Things that I would focus on in future development of this project are improving the re-usability of the Accordion component and adding tests.
+I would plan to evolve this project in several ways. First, I would enhance the Accordion component's reusability by implementing a more robust prop interface.
+
+I would also restructure the CSS implementation using a methodology like BEM to improve maintainability and eliminate potential style conflicts. Additionally, I'll establish a comprehensive testing suite encompassing unit tests for component logic, integration tests for state management, and accessibility tests to ensure WCAG compliance.
 
 ### Useful resources
 
